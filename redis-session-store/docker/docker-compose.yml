@@ -1,0 +1,9 @@
+version: "3"
+services:
+  session-store:
+    image: redis:7.2
+    command: redis-server --requirepass pass --appendonly yes
+    volumes:
+      - ./datadir:/data
+    ports:
+      - "6379:6379"
