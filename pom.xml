@@ -18,6 +18,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>jackson-config</module>
         <module>redis-session-store</module>
     </modules>
 
@@ -38,19 +39,6 @@
             <groupId>org.scala-lang</groupId>
             <artifactId>scala3-library_${scala.binary}</artifactId>
             <version>${scala.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.module</groupId>
-            <artifactId>jackson-module-scala_${scala.binary}</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jdk8</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
 
         <dependency>
