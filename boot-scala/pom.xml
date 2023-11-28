@@ -24,6 +24,11 @@
             <artifactId>scala3-library_${scala.binary}</artifactId>
             <version>${scala.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.typesafe.scala-logging</groupId>
+            <artifactId>scala-logging_${scala.binary}</artifactId>
+            <version>${scala-logging.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
