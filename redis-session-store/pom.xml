@@ -6,9 +6,9 @@
 
     <parent>
         <groupId>fun.curried</groupId>
-        <artifactId>playground</artifactId>
+        <artifactId>cloud-base</artifactId>
         <version>0.0.1</version>
-        <relativePath/>
+        <relativePath>../cloud-base/pom.xml</relativePath>
     </parent>
 
     <artifactId>redis-session-store</artifactId>
@@ -45,4 +45,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

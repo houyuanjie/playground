@@ -8,15 +8,21 @@
         <groupId>fun.curried</groupId>
         <artifactId>playground</artifactId>
         <version>0.0.1</version>
-        <relativePath/>
     </parent>
 
     <artifactId>boot-scala</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala3-library_${scala.binary}</artifactId>
+            <version>${scala.version}</version>
         </dependency>
 
         <dependency>
@@ -25,4 +31,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
