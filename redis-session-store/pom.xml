@@ -8,6 +8,7 @@
         <groupId>fun.curried</groupId>
         <artifactId>playground</artifactId>
         <version>0.0.1</version>
+        <relativePath/>
     </parent>
 
     <artifactId>redis-session-store</artifactId>
@@ -15,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>fun.curried</groupId>
-            <artifactId>jackson-config</artifactId>
+            <artifactId>boot-scala</artifactId>
             <version>0.0.1</version>
         </dependency>
 

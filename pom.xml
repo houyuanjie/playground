@@ -18,7 +18,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>jackson-config</module>
+        <module>boot-scala</module>
         <module>redis-session-store</module>
     </modules>
 
