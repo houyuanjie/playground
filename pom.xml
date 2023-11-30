@@ -21,6 +21,7 @@
         <module>cloud-base</module>
         <module>boot-scala</module>
         <module>redis-session-store</module>
+        <module>kafka-message-pubsub</module>
     </modules>
 
     <properties>
@@ -65,6 +66,18 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <args>
+                            <!-- 不可忽略警告 -->
+                            <arg>-Werror</arg>
+                            <!-- 警告过时的特性 -->
+                            <arg>-deprecation</arg>
+                            <!-- 警告需要显式导入的特性 -->
+                            <arg>-feature</arg>
+                            <!-- 警告未检查的使用 -->
+                            <arg>-unchecked</arg>
+                        </args>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
